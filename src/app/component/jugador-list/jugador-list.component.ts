@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Result } from 'src/app/modul/IPersonaje.model';
 import { JugadoresService } from 'src/app/service/jugadores.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { JugadoresService } from 'src/app/service/jugadores.service';
 })
 export class JugadorListComponent implements OnInit {
 
-  jugadores: any[] = [];
+  jugadores: Result[] = [];
   constructor(private jugadoresService: JugadoresService) { }
 
   ngOnInit() {
